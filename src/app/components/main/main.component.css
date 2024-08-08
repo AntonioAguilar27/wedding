@@ -1,0 +1,253 @@
+.fondo {
+    background-color: rgb(249, 246, 247);
+    background-image: url("../../../../public/bg.jpg");
+}
+
+.container-fluid {
+    width: 100%; /* O el ancho deseado */
+    height: 600px; /* Ajusta la altura del contenedor */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que desborde el contenedor */
+    display: flex;
+    justify-content: center; /* Opcional: centra la imagen horizontalmente */
+    align-items: center; /* Opcional: centra la imagen verticalmente */
+  }
+  
+  .container-fluid img {
+    width: 100%; /* La imagen llenará el ancho del contenedor */
+    height: 100%; /* La imagen llenará la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+  }
+  
+
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(244, 244,244); /* Cambia el color según sea necesario */
+    font-size: 60px; /* Ajusta el tamaño del texto */
+    font-family: 'Noto Serif', serif;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+
+  .otra-fuente {
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(125,124,123);
+  }
+
+
+/* Asegúrate de que la imagen se ajuste bien */
+.img-fluid {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene las proporciones de la imagen */
+}
+
+/* Estilos generales para los divs */
+.box {
+  padding: 20px; /* Espacio interno */
+  background-color: #f0f0f0; /* Color de fondo para visibilidad */
+  text-align: right; /* Centra el texto */
+}
+
+/* Estilo para el primer div */
+
+/* Estilo para el segundo div (itinerario) */
+.itinerario-box {
+  padding: 80px; /* Espacio interno */
+  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo blanco con 80% de opacidad */
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+.itinerario-title, .sub-title, .itinerario-details, .btn, .dresscode {
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+/* Estilo para el título del itinerario */
+.itinerario-title {
+  font-size: 2.5rem; /* Tamaño grande para el título */
+
+  text-align: right; /* Alinea el texto a la derechat; /* Alinea el texto a la derechat; /* Alinea el texto a la derecha*/
+  font-size: 3rem; /* Tamaño un poco más pequeño que el título */
+}
+
+/* Estilo para el subtítulo */
+.sub-title {
+  font-size: 1.5rem; /* Tamaño un poco más pequeño que el título */
+  margin-bottom: 1rem; /* Espacio inferior */
+  text-align:right; /**/
+}
+
+/* Estilo para los detalles del itinerario */
+.itinerario-details {
+  font-size: 1rem; /* Tamaño de texto normal */
+  margin-bottom: 1rem; /* Espacio inferior */
+  text-align: center;
+}
+
+/* Estilo para el botón */
+.btn-outline-secondary{
+  border-color: rgb(174, 155, 138); /* Color del borde del botón */
+  background-color: rgb(174, 155, 138); /* Color del borde del botón */
+}
+
+/* Estilo para el dresscode */
+.dresscode {
+  font-size: 0.9rem; /* Tamaño de texto más pequeño para el dresscode */
+  text-align: center;
+}
+
+/* Espacio entre los divs en pantallas móviles */
+@media (max-width: 767.98px) {
+  .box {
+    margin-bottom: 15px; /* Espacio entre los divs en pantallas móviles */
+  }
+}
+
+/* Estilo de la línea de separación */
+.hr-separator {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 0; /* Espaciado alrededor de la línea */
+}
+
+#mesa-de-regalos {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#mesa-de-regalos .fondo {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#mesa-de-regalos .image-container-regalos {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Altura de la imagen para cubrir toda la pantalla */
+  background-image: url('../../../../public/foto3.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
+  background-position: center; /* Centra la imagen */
+}
+
+.custom-itinerario-box {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.custom-itinerario-title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.custom-sub-title {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.custom-itinerario-details {
+  font-size: 1rem;
+  color: #666;
+}
+
+.custom-dresscode {
+  font-size: 1rem;
+  color: #444;
+}
+
+.custom-hr-separator {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+
+.custom2 {
+  /* Ajuste de márgenes y relleno para el contenedor principal */
+  margin-bottom: 2rem;
+}
+
+.custom-itinerario-box {
+  /* Fondo blanco y bordes redondeados */
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px; /* Espacio interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  max-width: 500px; /* Ajuste del ancho máximo */
+  width: 100%;
+}
+
+.custom-itinerario-title {
+  /* Estilo para el título principal */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  color: #333333;
+  text-align: center; /* Centra el texto */
+}
+
+.custom-sub-title {
+  /* Estilo para los subtítulos */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  color: #555555;
+  text-align: center; /* Centra el texto */
+}
+
+.custom-itinerario-details {
+  /* Estilo para los detalles del itinerario */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  color: #666666;
+  text-align: center; /* Centra el texto */
+}
+
+.custom-dresscode {
+  /* Estilo para el código de vestimenta */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  color: #444444;
+  text-align: center; /* Centra el texto */
+}
+
+.custom-hr-separator {
+  /* Estilo para el separador */
+  border: 0;
+  height: 1px;
+  background: #dddddd;
+  margin: 20px 0; /* Espacio vertical */
+}
+
+.btn-outline-secondary {
+  /* Estilo personalizado para el botón */
+  border-color: #888888; /* Color del borde */
+  color: #888888; /* Color del texto */
+  background-color: transparent; /* Fondo transparente */
+}
+
+.btn-outline-secondary:hover {
+  /* Estilo para el estado hover del botón */
+  border-color: #666666; /* Color del borde en hover */
+  color: #666666; /* Color del texto en hover */
+  background-color: #f0f0f0; /* Fondo en hover */
+}

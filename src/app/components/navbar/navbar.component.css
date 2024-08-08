@@ -1,0 +1,75 @@
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(245, 240, 234);
+    height: 80px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 200;
+    font-style: italic;
+    z-index: 1000; /* O un valor mayor si es necesario */
+    width: 100%; /* Asegúrate de que el fondo ocupe todo el ancho */
+  }
+  
+  .logo-img {
+    max-height: 100px; /* Ajusta esta altura según tus necesidades */
+    height: auto;
+    width: auto;
+  }
+  
+  a { 
+    color: rgb(125, 124, 123);
+  }
+
+  /* Hide modal in desktop view */
+@media (min-width: 768px) {
+    .modal {
+      display: none !important;
+    }
+  }
+
+  .modal-content a {
+    color: rgb(125, 124, 123);
+}
+
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% opacidad */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.modal-backdrop.show {
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Ajustar la posición vertical del modal */
+.modal-dialog {
+    margin-top: 80px; /* Ajusta el margen superior para cambiar la posición vertical */
+}
+  
+
+
+/* Estilo del botón de hamburguesa */
+.hamburger-button {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    padding: 10px; /* Espaciado interno */
+    display: flex;
+    flex-direction: column; /* Organizar las líneas verticalmente */
+    align-items: center; /* Centrar las líneas horizontalmente */
+  }
+  
+  /* Estilo de las líneas del ícono de hamburguesa */
+  .hamburger-line {
+    width: 30px; /* Ancho de las líneas */
+    height: 3px; /* Alto de las líneas */
+    background-color: rgb(125, 124, 123);
+    margin: 3px 0; /* Espacio entre las líneas */
+    border-radius: 3px; /* Bordes redondeados */
+  }
+  
+  /* Opcional: Cambiar el color y el tamaño del botón al pasar el ratón */
+  .hamburger-button:hover .hamburger-line {
+    background-color: #007bff; /* Color al pasar el ratón */
+  }
